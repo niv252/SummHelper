@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+html
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow-x: hidden;height: 100%;top:  0;position: absolute;width: 100%; }
+
+.root {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.mat-step-header {
+  pointer-events: none;
+  display: none !important;
+}
+
+.mat-horizontal-stepper-header-container {
+width: 50vw !important;
+  margin: auto !important;
+  display: none !important;
+
+}
+
+.editable-span {
+  display: inline-block;
+  outline: none; /* Remove the default outline */
+}
+
+.mat-toolbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important /* Adjust the shadow values to your preference */
+}
+
+::-webkit-scrollbar {
+  cursor: pointer !important;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  cursor: pointer !important;
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer !important;
+  border-radius: 8px;
+  background-color: #3f51b5;
+}
+
+.cdk-overlay-container {
+  z-index: 2000000000000000
+}
+
+.word {
+  border: 0;
+}
+
+.word:after {
+  content: "\200B"; /* Add an invisible zero-width space after the content */
+}

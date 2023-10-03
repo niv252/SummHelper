@@ -1,0 +1,12 @@
+<div class="main-container highlight-cursor" id="mainContainer" #mainContainer [ngClass]="{'eraser-cursor': isInEraseMode}">
+
+</div>
+<mat-card class="mat-elevation-z24 highlight-cursor mat-badge-overlap mat-badge-above mat-badge-after mat-badge-small mat-badge" [ngClass]="{'eraser-cursor': isInEraseMode}" >
+    <div class="text-to-highlight highlight-cursor" id="highlightContainer" #highlightContainer [ngClass]="{'eraser-cursor': isInEraseMode}"></div>
+</mat-card>
+
+
+<span id="badge" aria-hidden="true" class="mat-badge-content mat-badge-active" style="cursor: pointer !important;width: fit-content;border-radius: 0; height: 20px; pointer-events: all; transform: (0.8);background-color: rgba(255,255,255, 0.5); visibility: hidden; position: absolute; right: -1.2rem; top: -0.8rem;">
+    <mat-icon aria-hidden="false" fontIcon="done" class="clickable" matTooltip="accept" style="color: green; background-color: rgba(255,255,255, 0.5) !important;"></mat-icon>
+    <mat-icon aria-hidden="false" fontIcon="close" class="clickable" matTooltip="reject" style=" color: red; background-color: rgba(255,255,255, 0.5) !important; "></mat-icon>
+</span>

@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.document-container {
+  width: 70vw;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.unmark-button {
+  background-color: lightgray !important;
+}
+.summarize-button {
+  width: fit-content;
+}
+.summarize-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
