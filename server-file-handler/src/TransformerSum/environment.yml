@@ -1,0 +1,23 @@
+name: transformersum
+channels:
+    - conda-forge
+    - pytorch
+dependencies:
+    - python=3.10
+    - pytorch=2.0.*
+    - scikit-learn=1.2.*
+    - tensorboard
+    - spacy
+    - sphinx
+    - pyarrow
+    - pre-commit=3.2.*
+    - pip
+    - pip:
+      - pytorch_lightning==1.6.5
+      - transformers==4.*
+      - torch_optimizer==0.3.*
+      - wandb==0.14.*
+      - rouge-score==0.1.*
+      - packaging
+      - datasets==2.*
+      - gradio==3.*

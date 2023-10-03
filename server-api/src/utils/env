@@ -1,0 +1,11 @@
+FILE_PATH=.~\niv.na\summarizer-server\summaries.txt
+NLP_SPECIAL_CASES={"highlight_start": "<extra_id_1>", "highlight_end": "<extra_id_2>"}
+HOST=0.0.0.0
+PORT=5001
+LOGGING_LEVEL=20
+DO_SAMPLE=True
+TOP_P=0.9
+MAX_LENGTH=1000
+NUM_BEAMS=2
+LENGTH_PENALTY=2.0
+NO_REPEAT_NGRAMS_SIZE=3

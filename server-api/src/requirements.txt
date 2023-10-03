@@ -1,0 +1,7 @@
+pydantic[dotenv]
+flask
+transformers
+pytorch
+spacy
+flask_cors
+uuid
