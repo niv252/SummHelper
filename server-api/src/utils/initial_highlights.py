@@ -45,8 +45,8 @@ def get_saliency_sentence_scores(txt: Union[str, List[Span]]) -> List[Tuple[int,
     scores_with_indices = [(i, sent, score) for i, (sent, score) in enumerate(scores)]
 
     scores_with_indices.sort(key=lambda x: (-x[2], x[0]))
-    per10 = math.ceil(len(scores_with_indices) / 3)
-    final = min(len(scores_with_indices) -1, per10)
+    topSentences = math.ceil(len(scores_with_indices) / 3)
+    final = min(len(scores_with_indices) -1, topSentences)
     scores_with_indices = scores_with_indices[0:max(1, final)]
     result = []
     for i, a, b in scores_with_indices:

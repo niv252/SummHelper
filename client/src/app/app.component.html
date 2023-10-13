@@ -12,8 +12,8 @@
     <div class="space-between margin-left" *ngIf="startedHighlighting && !flag">
       <div style="display: flex; align-items: center;" >
         <mat-icon aria-hidden="false" fontIcon="auto_fix_high" class="clickable margin-right-more icon" style="padding: 5px;" matTooltip="suggest initial highlight" [ngClass]="{'clicked': (isInInitialHighlightMode$ | async)}" (click)="toggleInitialHighlightMode()"></mat-icon>
-        <mat-icon class="clickable padding-erase icon" matTooltip="highlight" [ngClass]="{'clicked': !(isInEraseMode$ | async)}" (click)="deactivateEraseMode()"><img src="https://nlp.biu.ac.il/~sloboda1/assets/highlight_new_white.svg" alt="highlight"/> </mat-icon>
-        <mat-icon class="clickable padding-erase icon" matTooltip="erase" [ngClass]="{'clicked': isInEraseMode$ | async}" (click)="activateEraseMode()"><img src="https://nlp.biu.ac.il/~sloboda1/assets/erase.svg" alt="erase"/> </mat-icon>
+        <mat-icon class="clickable padding-erase icon" matTooltip="highlight" [ngClass]="{'clicked': !(isInEraseMode$ | async)}" (click)="deactivateEraseMode()"><img src="https://nlp.biu.ac.il/~sloboda1/SummHelper/assets/highlight_new_white.svg" alt="highlight"/> </mat-icon>
+        <mat-icon class="clickable padding-erase icon" matTooltip="erase" [ngClass]="{'clicked': isInEraseMode$ | async}" (click)="activateEraseMode()"><img src="https://nlp.biu.ac.il/~sloboda1/SummHelper/assets/erase.svg" alt="erase"/> </mat-icon>
         <mat-icon aria-hidden="false" fontIcon="undo" class="clickable margin-right-more icon" matTooltip="undo" (click)="undo()"></mat-icon>
         <mat-icon aria-hidden="false" fontIcon="restart_alt" class="clickable icon" matTooltip="reset" (click)="resetHighlightStage()"></mat-icon>
       </div>
